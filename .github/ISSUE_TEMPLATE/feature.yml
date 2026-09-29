@@ -1,0 +1,33 @@
+name: 功能任务
+description: 记录一个可验收的功能或体验改进
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景与目标
+      description: 为什么需要这个改动？它解决什么问题？
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 任务范围
+      description: 列出本次需要完成的内容和明确不包含的内容。
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收标准
+      description: 使用可观察、可测试的条目描述完成条件。
+      placeholder: "- [ ] 用户完成 28 道题后能看到唯一职业结果"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 验收证据
+      description: 填写测试命令、截图、录屏或相关提交。
+
